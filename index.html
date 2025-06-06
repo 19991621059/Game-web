@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monster Survivors - Exciting Online Survival Game | Play Now</title>
+    <meta name="description" content="Play Monster Survivors online for free! An exciting survival game where you battle hordes of monsters in an ever-changing world. No download required.">
+    <link rel="canonical" href="https://nimeide.online">
+    <meta name="keywords" content="Monster Survivors, online game, survival game, free game, browser game">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        apple: {
+                            blue: '#007AFF',
+                            gray: '#8E8E93',
+                            green: '#34C759',
+                            red: '#FF3B30',
+                            dark: '#1D1D1F',
+                            light: '#F5F5F7'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-apple-light text-apple-dark font-sans">
+    <header class="bg-apple-dark text-white py-6 shadow-md">
+        <div class="container mx-auto px-4 md:px-8">
+            <nav class="flex justify-between items-center">
+                <div class="text-xl font-bold">
+                    <a href="/" class="hover:text-apple-blue transition">nimeide.online</a>
+                </div>
+                <div>
+                    <a href="#game" class="hover:text-apple-blue transition mr-4">Play Now</a>
+                    <a href="#about" class="hover:text-apple-blue transition">About</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 md:px-8 py-8">
+        <section class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 text-apple-dark">Monster Survivors</h1>
+            <p class="text-xl text-apple-gray mb-8">Survive endless waves of monsters in this thrilling action-packed adventure!</p>
+            <div class="bg-gradient-to-r from-apple-blue to-apple-green p-1 rounded-lg inline-block">
+                <button class="bg-white py-2 px-6 rounded-lg font-semibold hover:bg-gray-50 transition">
+                    <a href="#game" class="text-apple-blue">Play Now</a>
+                </button>
+            </div>
+        </section>
+
+        <section id="game" class="mb-16">
+            <h2 class="text-2xl md:text-3xl font-bold mb-6 text-apple-dark border-l-4 border-apple-blue pl-3">Play Monster Survivors</h2>
+            <div class="w-full bg-black rounded-xl shadow-xl overflow-hidden">
+                <div class="relative pb-[56.25%] h-0">
+                    <iframe id="game-iframe" 
+                            src="https://www.onlinegames.io/embed/monster-survivors/" 
+                            class="absolute top-0 left-0 w-full h-full" 
+                            frameborder="0" 
+                            scrolling="no"
+                            allowfullscreen>
+                    </iframe>
+                    <div id="fallback-content" class="absolute top-0 left-0 w-full h-full bg-black flex flex-col items-center justify-center text-white p-4" style="display: none;">
+                        <h3 class="text-xl font-bold mb-4">游戏暂时无法加载</h3>
+                        <p class="mb-4 text-center">抱歉，游戏服务器可能暂时无法访问。您可以：</p>
+                        <ul class="list-disc pl-5 mb-4">
+                            <li>检查您的网络连接</li>
+                            <li>尝试刷新页面</li>
+                            <li>稍后再试</li>
+                        </ul>
+                        <div class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4">
+                            <button id="retry-button" class="bg-apple-blue text-white py-2 px-6 rounded-lg font-semibold hover:bg-blue-600 transition">重试加载</button>
+                            <a href="https://play.google.com/store/apps/details?id=com.habby.monstersurvival" target="_blank" class="bg-apple-green text-white py-2 px-6 rounded-lg font-semibold hover:bg-green-600 transition text-center">下载安卓版</a>
+                            <a href="https://apps.apple.com/app/survivor-io/id1528941310" target="_blank" class="bg-apple-red text-white py-2 px-6 rounded-lg font-semibold hover:bg-red-600 transition text-center">下载iOS版</a>
+                        </div>
+                        <div class="mt-6 text-center">
+                            <p class="text-sm text-gray-400 mb-2">或者尝试以下替代游戏：</p>
+                            <div class="grid grid-cols-2 gap-4">
+                                <button onclick="playAlternativeGame(0)" class="bg-gray-800 hover:bg-gray-700 transition py-2 px-4 rounded">怪物生存</button>
+                                <button onclick="playAlternativeGame(1)" class="bg-gray-800 hover:bg-gray-700 transition py-2 px-4 rounded">生存大作战</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="mb-16">
+            <h2 class="text-2xl md:text-3xl font-bold mb-6 text-apple-dark border-l-4 border-apple-blue pl-3">About Monster Survivors</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-3 text-apple-blue">Game Overview</h3>
+                    <p class="text-apple-gray mb-4">Monster Survivors is an exciting survival game where you must battle against endless waves of monsters. Use your skills and strategy to survive as long as possible in this challenging world.</p>
+                    <p class="text-apple-gray">Collect power-ups, upgrade your character, and discover new abilities as you progress through the game. How long can you survive?</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-3 text-apple-blue">Game Features</h3>
+                    <ul class="list-disc pl-5 text-apple-gray space-y-2">
+                        <li>Endless gameplay with increasing difficulty</li>
+                        <li>Multiple character abilities and upgrades</li>
+                        <li>Dynamic environments and enemy types</li>
+                        <li>Exciting power-ups and special items</li>
+                        <li>Easy to learn, challenging to master</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16">
+            <h2 class="text-2xl md:text-3xl font-bold mb-6 text-apple-dark border-l-4 border-apple-blue pl-3">How to Play</h2>
+            <div class="bg-white p-6 rounded-xl shadow-md">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="text-center">
+                        <div class="bg-apple-blue text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">1</div>
+                        <h3 class="font-semibold mb-2">Move Your Character</h3>
+                        <p class="text-apple-gray text-sm">Use WASD or arrow keys to move your character around the map.</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-apple-blue text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">2</div>
+                        <h3 class="font-semibold mb-2">Collect Power-ups</h3>
+                        <p class="text-apple-gray text-sm">Gather power-ups to enhance your abilities and increase your chances of survival.</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-apple-blue text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">3</div>
+                        <h3 class="font-semibold mb-2">Survive!</h3>
+                        <p class="text-apple-gray text-sm">Avoid or defeat monsters to survive as long as possible and achieve a high score.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="text-2xl md:text-3xl font-bold mb-6 text-apple-dark border-l-4 border-apple-blue pl-3">Why Players Love Monster Survivors</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <div class="flex items-start mb-4">
+                        <div class="text-apple-green text-2xl mr-3">★★★★★</div>
+                        <div>
+                            <h4 class="font-semibold">Addictive Gameplay</h4>
+                            <p class="text-apple-gray text-sm">"I can't stop playing this game! The simple controls and challenging gameplay make it perfect for quick gaming sessions."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <div class="flex items-start mb-4">
+                        <div class="text-apple-green text-2xl mr-3">★★★★★</div>
+                        <div>
+                            <h4 class="font-semibold">Great for All Ages</h4>
+                            <p class="text-apple-gray text-sm">"My kids and I both enjoy playing Monster Survivors. It's easy to learn but offers enough challenge to keep everyone engaged."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-apple-dark text-white py-8 mt-12">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p>&copy; 2023 nimeide.online. All rights reserved.</p>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="#" class="hover:text-apple-blue transition">Privacy Policy</a>
+                    <a href="#" class="hover:text-apple-blue transition">Terms of Service</a>
+                    <a href="#" class="hover:text-apple-blue transition">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple scroll to section functionality
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Global variables for game loading
+        let currentSourceIndex = 0;
+        const gameSources = [
+            "https://www.onlinegames.io/embed/monster-survivors/",
+            "https://dfmr96.itch.io/monster-survival",
+            "https://games.construct.net/2025/latest",
+            "https://www.miniplay.com/embed/survivor-io"
+        ];
+        
+        // Alternative games that can be played if main game fails
+        const alternativeGames = [
+            "https://www.crazygames.com/embed/vampire-survivors",
+            "https://www.crazygames.com/embed/survivor-io"
+        ];
+        
+        // Function to play alternative game
+        function playAlternativeGame(index) {
+            const gameIframe = document.querySelector('#game-iframe');
+            const fallbackContent = document.querySelector('#fallback-content');
+            
+            if (gameIframe && index < alternativeGames.length) {
+                gameIframe.src = alternativeGames[index];
+                if (fallbackContent) {
+                    fallbackContent.style.display = 'none';
+                }
+                
+                // Add loading indicator
+                const gameContainer = document.querySelector('#game .relative');
+                const loadingIndicator = document.createElement('div');
+                loadingIndicator.className = 'absolute inset-0 flex items-center justify-center bg-black bg-opacity-70 z-10';
+                loadingIndicator.innerHTML = '<div class="text-white text-xl">加载替代游戏中，请稍候...</div>';
+                gameContainer.appendChild(loadingIndicator);
+                
+                // Remove loading indicator after game loads
+                gameIframe.addEventListener('load', function loadHandler() {
+                    loadingIndicator.remove();
+                    gameIframe.removeEventListener('load', loadHandler);
+                });
+                
+                // Set timeout to remove loading indicator
+                setTimeout(function() {
+                    loadingIndicator.remove();
+                }, 10000);
+            }
+        }
+
+        // Game iframe loading handler
+        const gameIframe = document.querySelector('#game-iframe');
+        if (gameIframe) {
+            // Add loading indicator
+            const gameContainer = document.querySelector('#game .relative');
+            const loadingIndicator = document.createElement('div');
+            loadingIndicator.className = 'absolute inset-0 flex items-center justify-center bg-black bg-opacity-70 z-10';
+            loadingIndicator.innerHTML = '<div class="text-white text-xl">加载中，请稍候...</div>';
+            gameContainer.appendChild(loadingIndicator);
+            
+            // Function to try loading the next source
+            function tryNextSource() {
+                if (currentSourceIndex < gameSources.length) {
+                    gameIframe.src = gameSources[currentSourceIndex];
+                    loadingIndicator.innerHTML = `<div class="text-white text-xl">尝试加载游戏源 ${currentSourceIndex + 1}/${gameSources.length}...</div>`;
+                    currentSourceIndex++;
+                } else {
+                    // All sources failed
+                    loadingIndicator.remove();
+                    const fallbackContent = document.querySelector('#fallback-content');
+                    if (fallbackContent) {
+                        fallbackContent.style.display = 'flex';
+                    }
+                }
+            }
+
+            // Set loading timeout
+            let gameLoadTimeout = setTimeout(function() {
+                // Try next source if current one fails to load
+                tryNextSource();
+            }, 8000); // 8 seconds timeout
+
+            // Handle iframe load event
+            gameIframe.addEventListener('load', function() {
+                // Remove loading indicator when game loads
+                loadingIndicator.remove();
+                clearTimeout(gameLoadTimeout);
+            });
+
+            // Handle iframe error
+            gameIframe.addEventListener('error', function() {
+                clearTimeout(gameLoadTimeout);
+                // Try next source
+                tryNextSource();
+            });
+            
+            // Initial load
+            tryNextSource();
+        }
+
+        // Fallback content handling
+        const fallbackContent = document.querySelector('#fallback-content');
+        const retryButton = document.querySelector('#retry-button');
+        if (fallbackContent && retryButton) {
+            retryButton.addEventListener('click', function() {
+                fallbackContent.style.display = 'none';
+                const gameIframe = document.querySelector('#game-iframe');
+                if (gameIframe) {
+                    // Reset source index and try again
+                    currentSourceIndex = 0;
+                    tryNextSource();
+                    
+                    // Show loading indicator again
+                    const gameContainer = document.querySelector('#game .relative');
+                    const loadingIndicator = document.createElement('div');
+                    loadingIndicator.className = 'absolute inset-0 flex items-center justify-center bg-black bg-opacity-70 z-10';
+                    loadingIndicator.innerHTML = '<div class="text-white text-xl">重新尝试加载游戏...</div>';
+                    gameContainer.appendChild(loadingIndicator);
+                    
+                    // Set new timeout
+                    setTimeout(function() {
+                        loadingIndicator.remove();
+                    }, 8000);
+                }
+            });
+        }
+    </script>
+</body>
+</html> 
